@@ -6,21 +6,20 @@ namespace PracticaGitHub
     {
         public static void Main(string[] args)
         {
-            int a ,b = 0;
+            int a, b = 0;
             
             Console.WriteLine("Enter a value for a: ");
-            a =Int32.Parse(Console.ReadLine());
+            a = Int32.Parse(Console.ReadLine());
             
             Console.WriteLine("Enter a value for b: ");
             b = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine ( $"Subtraction {a} + {b} equals {SubtractionNumbers(a, b)} ");
-
+            Console.WriteLine($"Multiplication {a} * {b} equals {MultiplicationNumbers(a, b)}");
         }
-        static int SubtractionNumbers(int a, int b)
+
+        static int MultiplicationNumbers(int a, int b)
         {
-    
-            return a-b;
+            return a * b;
         }
     }
 }
